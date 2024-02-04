@@ -1,4 +1,6 @@
+
 import Hero from './hero'
+import MyGallery from './mygallery'
 import RoomsShowcase from './roomsShowcase'
 
 export default function Home() {
@@ -8,6 +10,7 @@ export default function Home() {
         <Hero/>
       </div>
       <RoomsShowcase />
+      <MyGallery />
     </main>
   )
 }
