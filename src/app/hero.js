@@ -6,18 +6,25 @@ import { useCallback, useState , useEffect } from 'react';
 export default function Hero(){
 
     const links = ['www.instagram.com/pahadi_basera','www.airbnb.com/h/pahadibaserahomestay','www.airbnb.com/h/pahadibaserahostel','www.facebook.com/pahadibasera'];
-
+    const headings = ['Where Tranquility Meets Tradition','Your Tranquil Homestay in the Heart of the Mountains','Relax in cozy rooms adorned with traditional decor, offering modern amenities for a comfortable stay. ']
     const [newLink,setNewLink] = useState('www.instagram.com/pahadi_basera');
+    const [newHeading,setNewHeading] = useState(headings[0]);
+
 
     const shuffle = useCallback(() => {
         const index = Math.floor(Math.random() * links.length);
         setNewLink(links[index]);
     }, []);
 
+    const shuffle1 = useCallback(() => {
+        const index = Math.floor(Math.random() * headings.length);
+        setNewHeading(headings[index]);
+    }, []);
+
     useEffect(() => {
-        const intervalID = setInterval(shuffle, 2000);
+        const intervalID = setInterval(shuffle1, 2000);
         return () => clearInterval(intervalID);
-    }, [shuffle])
+    }, [shuffle1])
 
 
     return(<div className="w-full hero-bg">
@@ -30,9 +37,10 @@ export default function Hero(){
                     objectFit: 'cover',
                 }}
             />
-        <div className='overlay'/> 
+        {/* <div className='overlay'/>  */}
         <div className='overlay-content text-center'>
-            <a href={`https://${newLink}`} target='_blank' className='text-black'>{newLink}</a>
+             <h2 className='text-black text-xl pb-4 hero-heading'>Pahadi Basera</h2>
+             {/* <h4 className='text-black'>{newHeading}</h4> */}
         </div>
     </div>)
 }

@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+  @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+
+body{
+    background-color: white;
+}
+
+.mynav{
+    position: fixed;
+    background: white;
+    color: black;
+    height: 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+}
+
 .hero-bg{
   height: 80vh;
   width: 100%;
@@ -25,16 +44,40 @@
 }
 .hero-bg .overlay-content{
     position: absolute;
-    width: 35%;
-    min-width: 200px;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    background-color: white;
-    border-radius: 30px;
-    padding: 20px 15px;
+    width: 40%;
+    min-width: 250px;
+    top: 0;
+    right: 0;
+    background-color: rgb(56 56 56 / 45%);
+    padding: 20px 15px 25px;
     overflow-x: hidden;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
+.hero-heading{
+
+    font-size: 50px;
+    font-family: 'Concert One', sans-serif;
+
+}
+
 .room-showcase .block{
     height: 400px;
+}
+.footer-bg{
+    padding: 40px;
+    width: 100%;
+    background-color: white;
+    height: 200px;
+    padding-top: 80px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .hero-bg .overlay-content{
+        width: 100%;
+    }
 }
