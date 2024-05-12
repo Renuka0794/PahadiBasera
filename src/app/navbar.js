@@ -1,5 +1,8 @@
 
 import Image from 'next/image'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook,faInstagram,faGoogle } from '@fortawesome/free-brands-svg-icons'
+
 
 export default function Navbar() {
   return (
@@ -13,16 +16,18 @@ export default function Navbar() {
             width={80}
             height={80}
             />
-            <p>home</p>
+            <p className=''>home</p>
             <p className=''>rooms</p>
             <p className=''>gallery</p>
             <p className=''>contact</p>
         </div>
         
         <div className='grid grid-cols-3 items-center'>
-            <p className=''>rooms</p>
-            <p className=''>gallery</p>
-            <p className=''>contact</p>
+         <FontAwesomeIcon icon={faFacebook} className='w-8 px-2'/>
+         <FontAwesomeIcon icon={faInstagram} className='w-8 px-2'/>
+         <FontAwesomeIcon icon={faGoogle} className='w-8 px-2'/>
+
+
         </div>
         
         
