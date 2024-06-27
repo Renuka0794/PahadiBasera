@@ -39,7 +39,7 @@ export default function Hero(){
             />
         {/* <div className='overlay'/>  */}
         <div className='overlay-content text-center'>
-             <h2 className='text-black text-xl pb-4 hero-heading'>Pahadi Basera</h2>
+             <h2 className='text-black text-xl pb-4 hero-heading'>Pahadi Basera Homestay</h2>
              {/* <h4 className='text-black'>{newHeading}</h4> */}
         </div>
     </div>)
