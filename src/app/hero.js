@@ -29,7 +29,7 @@ export default function Hero(){
 
     return(<div className="w-full hero-bg">
             <Image
-                src="/hero.png"
+                src={"/hero.png"}
                 alt="hero image"
                 quality={100}
                 layout="fill"
