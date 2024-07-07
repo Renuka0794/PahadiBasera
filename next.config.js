@@ -12,4 +12,3 @@ module.exports = {
       ],
     },
   }
-  pahadibaserahomestay.netlify.app
