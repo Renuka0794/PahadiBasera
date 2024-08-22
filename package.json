@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "predeploy": "npm run build",
-     "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "lint": "next lint"
   },
   "dependencies": {
@@ -22,7 +22,8 @@
     "react": "^18.2.0",
     "react-18-image-lightbox": "^5.1.4",
     "react-dom": "^18.2.0",
-    "react-grid-gallery": "^1.0.1-alpha.0"
+    "react-grid-gallery": "^1.0.1-alpha.0",
+    "sharp": "^0.33.5"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
